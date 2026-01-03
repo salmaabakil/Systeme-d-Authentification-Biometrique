@@ -7,7 +7,7 @@ import os
 
 
 class Settings(BaseSettings):
-    """Paramètres de configuration"""
+    """Paramètres de configuration"""  
     
     # Application
     APP_NAME: str = "Biométrie Examen"
