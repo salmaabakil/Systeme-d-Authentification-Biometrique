@@ -1,15 +1,15 @@
-# 🔐 Système d'Accès Biométrique aux Examens en Ligne
+# Système d'Accès Biométrique aux Examens en Ligne
 
-## 📋 Description
+## Description
 
 Ce projet est un système de sécurisation des examens en ligne utilisant la biométrie multimodale (visage + voix). Il permet de :
 
-- ✅ Authentifier les candidats par reconnaissance faciale et vocale
-- ✅ Surveiller en continu pendant les examens
-- ✅ Détecter les anomalies et tentatives de fraude
-- ✅ Gérer les examens et les utilisateurs
+- Authentifier les candidats par reconnaissance faciale et vocale
+- Surveiller en continu pendant les examens
+- Détecter les anomalies et tentatives de fraude
+- Gérer les examens et les utilisateurs
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 biometrie-exam/
@@ -53,7 +53,7 @@ biometrie-exam/
 └── README.md
 ```
 
-## 🚀 Installation
+## Installation
 
 ### Prérequis
 
@@ -84,7 +84,7 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-> ⚠️ **Note**: L'installation de `dlib` et `face-recognition` peut nécessiter CMake et un compilateur C++.
+> **Note**: L'installation de `dlib` et `face-recognition` peut nécessiter CMake et un compilateur C++.
 
 5. **Configurer l'environnement**
 ```bash
@@ -97,7 +97,7 @@ cp .env.example .env
 python run.py
 ```
 
-## 🌐 Accès
+## Accès
 
 - **Application**: http://localhost:8000/static/login.html
 - **API Docs**: http://localhost:8000/docs
@@ -107,23 +107,23 @@ python run.py
 - Email: `admin@example.com`
 - Mot de passe: `admin123`
 
-## 📖 Fonctionnalités
+## Fonctionnalités
 
-### 👨‍💼 Administrateur
+### Administrateur
 
 - Créer et gérer les comptes étudiants
 - Créer et configurer les examens
 - Consulter les journaux de sécurité
 - Voir les statistiques et résultats
 
-### 👩‍🎓 Candidat
+### Candidat
 
 - S'inscrire et se connecter
 - Effectuer l'enrôlement biométrique (visage + voix)
 - Passer les examens avec surveillance continue
 - Consulter ses résultats
 
-## 🔒 Sécurité Biométrique
+## Sécurité Biométrique
 
 ### Enrôlement
 1. Capture du visage via webcam
@@ -141,7 +141,7 @@ python run.py
 - Détection d'absence
 - Détection de changement de personne
 
-## 🛠️ Technologies
+## Technologies
 
 - **Backend**: Python, FastAPI, SQLAlchemy
 - **Base de données**: SQLite (async)
@@ -150,7 +150,7 @@ python run.py
 - **Frontend**: HTML5, CSS3, JavaScript vanilla
 - **Authentification**: JWT
 
-## ⚙️ Configuration
+## Configuration
 
 Modifiez le fichier `.env` pour personnaliser:
 
@@ -169,7 +169,7 @@ FACE_CHECK_INTERVAL_SECONDS=30
 VOICE_CHALLENGE_INTERVAL_SECONDS=120
 ```
 
-## 📝 API Endpoints
+## API Endpoints
 
 ### Authentification
 - `POST /api/auth/register` - Inscription
@@ -192,10 +192,10 @@ VOICE_CHALLENGE_INTERVAL_SECONDS=120
 - `GET /api/admin/security-logs` - Journaux de sécurité
 - `GET /api/admin/statistics` - Statistiques
 
-## 📄 Licence
+## Licence
 
 Ce projet est développé à des fins éducatives.
 
-## 👥 Auteur
+## Auteur
 
 Projet de fin d'études - Système d'accès biométrique aux examens en ligne
