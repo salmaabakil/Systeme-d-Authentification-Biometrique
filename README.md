@@ -91,6 +91,11 @@ pip install -r requirements.txt
 cp .env.example .env
 # Modifiez le fichier .env selon vos besoins
 ```
+## Configuration – Clé de chiffrement biométrique
+Générez une clé avec la commande suivante :
+```bash
+python -c "from app.services.encryption_service import EncryptionService; print(EncryptionService.generate_key())"
+
 
 6. **Lancer l'application**
 ```bash
